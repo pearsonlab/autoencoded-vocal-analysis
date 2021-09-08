@@ -1,0 +1,4 @@
+* If you add a file, then update the corresponding "source/ava.X.rst" file and
+  that subpackage's "__init__.py".
+* "source/conf.py" contains fields like year and release.
+* To make docs, reinstall AVA then "make html" with the auto-generated Makefile.

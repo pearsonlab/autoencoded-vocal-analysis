@@ -1,0 +1,8 @@
+numpy
+matplotlib
+joblib
+umap
+numba
+sklearn
+scipy
+h5py

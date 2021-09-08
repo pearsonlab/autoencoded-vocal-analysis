@@ -1,0 +1,27 @@
+0.2.0  10/18/19  Preprint release
+0.2.1  10/26/19  Fixed import bugs and docs
+0.2.2  10/31/19  segmenting.template_segmentation changes
+0.2.3  11/05/19  segmenting.template_segmentation changes and docs update
+0.2.4  11/21/19  DataContainer.clean_projections -> clear_projections
+                 plotting.mmd_plots added
+                 plotting.shotgun_movie added
+                 preprocessing.preprocess.process_sylls bug fix
+                 segmenting.refine_segments.refine_segments_post_vae added
+0.2.5  12/20/19  preprocessing.preprocess.process_sylls now shuffles by default.
+                 Small changes to DataContainer.
+0.3.0  12/15/20  Changes to segmenting.template_segmentation
+                 New filename convention for segmenting.utils.write_segments_to_audio
+                 Changes to segmenting.utils.clean_segments_by_hand
+                 segmenting.template_segmentation.clean_collected_data -> clean_collected_segments
+                 Warped shotgun approach described in docs (TO DO!)
+                 Breaking changes to plotting.mmd_plots
+                 Breaking changes to models.window_vae_dataset
+                 Bug fix in preprocessing.preprocess
+                 segmenting.template_segmentation.segment_sylls_from_warped_songs added
+                 models.utils added, with time-warping parameter search functions
+                 segmenting.utils.merge_segments added
+                 preprocessing.warping added
+                 Changes to preprocessing.preprocess.get_audio_seg_filenames
+                 Catching scipy.io.wavfile.WavFileWarning
+                 NumbaPerformanceWarning imports changed
+0.3.1 ??/??/??   ...

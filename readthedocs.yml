@@ -1,0 +1,13 @@
+# .readthedocs.yml
+
+build:
+  image: latest
+
+python:
+  version: 3.6
+
+sphinx:
+  configuration: docs/source/conf.py
+
+python:
+  setup_py_install: true

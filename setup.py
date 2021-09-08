@@ -13,7 +13,7 @@ setuptools.setup(
 	description="Generative modeling of animal vocalizations",
 	long_description=long_description,
 	long_description_content_type="text/markdown",
-	url="https://github.com/jackgoffinet/autoencoded-vocal-analysis",
+	url="https://github.com/pearsonlab/autoencoded-vocal-analysis",
 	packages=setuptools.find_packages(),
 	classifiers=[
 		"Programming Language :: Python :: 3",

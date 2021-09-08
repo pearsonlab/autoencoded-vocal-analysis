@@ -14,7 +14,7 @@ for documentation and a tutorial.
 
 #### To build:
 ```
-$ git clone https://github.com/jackgoffinet/autoencoded-vocal-analysis.git
+$ git clone https://github.com/pearsonlab/autoencoded-vocal-analysis
 $ cd autoencoded-vocal-analysis
 $ pip install .
 ```

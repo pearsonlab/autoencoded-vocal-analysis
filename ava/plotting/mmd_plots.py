@@ -64,9 +64,9 @@ def mmd_matrix_plot_DC(dc, condition_from_fn, mmd2_fn, condition_fn, \
 	condition_from_fn : function
 		Returns an int representing condition, given a filename.
 	mmd2_fn : str
-		Where MMD^2 values are saved to/loaded from.
+		Where MMD^2 values are saved to/loaded from. Should end in `.npy`.
 	condition_fn : str
-		Where conditions are saved to/loaded from.
+		Where conditions are saved to/loaded from. Should end in `.npy`.
 	parallel : bool, optional
 		Whether to calculate different MMD^2 values in parallel. If ``True``,
 		MMD^2 values are printed out to stdout and can then be saved and formed
@@ -182,9 +182,9 @@ def mmd_tsne_plot_DC(dc, mmd2_fn=None, condition_fn=None, mmd2=None, \
 	dc : ava.data.data_container.DataContainer
 		DataContainer object.
 	mmd2_fn : str
-		Where MMD^2 values are saved to/loaded from.
+		Where MMD^2 values are saved to/loaded from. Should end in `.npy`.
 	condition_fn : str
-		Where conditions are saved to/loaded from.
+		Where conditions are saved to/loaded from. Should end in `.npy`.
 	mmd2 : {numpy.ndarray, None}, optional
 		MMD^2 matrix. Defaults to ``None``.
 	conditions : {numpy.ndarray, None}, optional
@@ -346,9 +346,11 @@ def _calculate_mmd2(dc, condition_from_fn, mmd2_fn=None, condition_fn=None, \
 	condition_from_fn : function
 		Maps audio filenames to conditions
 	mmd2_fn : {str, ``None``}, optional
-		Where MMD^2 values are saved to. Defaults to ``None``.
+		Where MMD^2 values are saved to. Defaults to ``None``. Should end in
+        `.npy` otherwise.
 	condition_fn : {str, ``None``}, optional
-		Where condition values are saved to. Defaults to ``None``.
+		Where condition values are saved to. Defaults to ``None``. Should end in
+        `.npy` otherwise.
 	parallel : bool, optional
 		Whether to parallelize computation
 	alg : {``'linear'``, ``'quadratic'``}, optional

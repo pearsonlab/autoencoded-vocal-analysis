@@ -51,7 +51,7 @@ np.random.seed(None)
 
 
 def mmd_matrix_plot_DC(dc, condition_from_fn, mmd2_fn, condition_fn, \
-	parallel=False, load_data=False, cluster=True, alg='quadratic', max_n=None,\
+	parallel=False, load_data=False, cluster=False, alg='quadratic', max_n=None,\
 	sigma=None, cmap='Greys', colorbar=True, cax=None, ticks=[0.0,0.3], \
 	filename='mmd_matrix.pdf', ax=None, save_and_close=True):
 	"""
@@ -75,7 +75,7 @@ def mmd_matrix_plot_DC(dc, condition_from_fn, mmd2_fn, condition_fn, \
 		Whether to load precomputed data. Defaults to ``False``.
 	cluster : bool, optional
 		Whether to order conditions by a clustering algorithm. Defaults to
-		``True``.
+		``False``.
 	alg : {``'linear'``, ``'quadratic'``}, optional
 		Use the linear-time or quadratic time MMD^2 estimate. Defaults to
 		``'quadratic'``.
@@ -120,7 +120,7 @@ def mmd_matrix_plot_DC(dc, condition_from_fn, mmd2_fn, condition_fn, \
 			cax=cax, ticks=ticks)
 
 
-def mmd_matrix_plot(mmd2, cluster=True, cmap='viridis', ax=None, \
+def mmd_matrix_plot(mmd2, cluster=False, cmap='viridis', ax=None, \
 	colorbar=True, cax=None, ticks=[0.0,0.3], filename='mmd_matrix.pdf', \
 	save_and_close=True):
 	"""
@@ -132,7 +132,7 @@ def mmd_matrix_plot(mmd2, cluster=True, cmap='viridis', ax=None, \
 		Pairwise MMD^2 values, a square matrix.
 	cluster : bool, optional
 		Whether to order conditions by a clustering algorithm. Defaults to
-		``True``.
+		``False``.
 	cmap : str, optional
 		Name of matplotlib colormap. Defaults to ``'viridis'``.
 	ax : matplotlib.axes._subplots.AxesSubplot, optional

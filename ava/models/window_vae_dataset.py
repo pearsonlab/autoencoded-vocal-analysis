@@ -557,7 +557,7 @@ class WarpedWindowDataset(Dataset):
 						UserWarning
 					)
 		# Otherwise, first make the spectrograms.
-		amps, specs, template_dur = _get_specs_and_amplitude_traces(self.audio,\
+		specs, amps, template_dur = _get_specs_and_amplitude_traces(self.audio,\
 				self.fs, self.p)
 		self.template_dur = template_dur
 		# Then warp.

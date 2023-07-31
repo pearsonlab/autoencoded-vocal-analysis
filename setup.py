@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 	long_description = fh.read()
 
 setuptools.setup(
-	name="AVA: Autoencoded Vocal Analysis",
+	name="Autoencoded Vocal Analysis",
 	version=ava.__version__,
 	author="Jack Goffinet",
 	author_email="jack.goffinet@duke.edu",

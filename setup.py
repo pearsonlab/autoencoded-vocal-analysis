@@ -25,7 +25,7 @@ setuptools.setup(
 		"numpy",
 		"matplotlib",
 		"joblib",
-		"umap",
+		"umap-learn",
 		"numba",
 		"scikit-learn",
 		"scipy",

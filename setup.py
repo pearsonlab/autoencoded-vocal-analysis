@@ -20,4 +20,19 @@ setuptools.setup(
 		"License :: OSI Approved :: MIT License",
 		"Operating System :: OS Independent",
 	],
+	install_requires = [
+		"torch>=1.1",
+		"numpy",
+		"matplotlib",
+		"joblib",
+		"umap-learn",
+		"numba",
+		"scikit-learn",
+		"scipy",
+		"bokeh",
+		"h5py",
+		"pytest",
+		"tqdm",
+		"affinewarp @ git+https://github.com/ahwillia/affinewarp.git"
+	]
 )

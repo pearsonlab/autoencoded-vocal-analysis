@@ -21,7 +21,7 @@ setuptools.setup(
 		"Operating System :: OS Independent",
 	],
 	install_requires = [
-		"torch>=1.1",
+		"torch>=1.1",!=1.12.0
 		"numpy",
 		"matplotlib",
 		"joblib",

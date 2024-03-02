@@ -75,7 +75,7 @@ def get_onsets_offsets(audio, p, return_traces=False):
 
 	# Then search to the left and right for onsets and offsets.
 	for local_max in local_maxima:
-		if len(offsets) > 1 and local_max < offsets[-1]:
+		if len(offsets) > 0 and local_max < offsets[-1]:
 			continue
 		i = local_max - 1
 		while i > 0:
